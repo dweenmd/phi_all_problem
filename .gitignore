@@ -13,6 +13,7 @@
 *.rafi
 *.doc
 *.pdf
+*.txt
 
 # Compiled Dynamic libraries
 *.so
