@@ -2,9 +2,11 @@
 int main()
 {
     int a;
-    printf("Enter a number::\n");
+    printf("Enter a number::");
     scanf("%d",&a);
-    while (a!=1){
+    printf("%d\n",a);
+    while (a>1){
+    
     if (a%2==0){
         a=a/2;
     }
@@ -12,6 +14,7 @@ int main()
         a=3*a+1;
     }
     printf("%d\n",a);
+    
     }
 }
 

@@ -5,7 +5,7 @@ int main()
 int i=100;
 while(i>=1)
     {
-        printf("My name is Dween Mohammad\n");
+        printf("%d.hello niloy\n",i);
         i--;
     }
     return 0;
