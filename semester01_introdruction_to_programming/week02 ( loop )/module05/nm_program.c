@@ -1,11 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int n,t;
-
-    scanf("%d",&t);
-    while(t--){
-        printf("\nchocolate number:");
+    int n;
+    printf("chocolate number:");
     scanf("%d",&n);
     int choc=n;
     int pack=n;
@@ -14,10 +11,8 @@ int main()
             pack=(pack/4)+(pack%4);
 
             }
-            printf("\nTotal chocolet %d",choc);
+            printf("Total chocolet %d",choc);
             printf("\nRemaining pack %d", pack);
-    }
-
 
     return 0;
 }
