@@ -2,16 +2,18 @@
 int main()
 {
     int n;
-    printf("Enter your chocolate number:");
-    scanf("%d",n);
+    printf("chocolate number:");
+    scanf("%d",&n);
     int choc=n;
     int pack=n;
-    while(n>=4){
+    while(pack>=4){
             choc+=(pack/4);
             pack=(pack/4)+(pack%4);
 
             }
-            printf("Total Chlocklet %d",choc);
+            printf("Total chocolet %d",choc);
+            printf("\nRemaining pack %d", pack);
 
     return 0;
 }
+
