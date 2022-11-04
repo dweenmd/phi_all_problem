@@ -1,21 +1,29 @@
-
+//count how many odd and even numbers are exist...
 #include<stdio.h>
 int main()
 {
-    int arr[5]= {1,2,3,4,5},i=5,j;
-    while(i>=1)
-    {
-        arr[i-1]-=i;
-        while(1)
-        {
-            arr[i-1]+=i;
-            break;
+    int n;
+    int arr[10000];
+    printf("How many elements you want to input:");
+    scanf("%d",&n);
+    printf("Your inputs numbers are:");
+    for (int i=0;i<n;i++){
+            scanf("%d",&arr[i]);
+    }
+    int even_count=0,odd_count=0;
+    for (int i=0;i<n;i++){
+        if (arr[i]%2==0){
+            even_count++;
         }
-        i-=1;
+        if(arr[i]%2!=0){
+            odd_count++;
+        }
     }
-    for(j=0; j<5; j++)
-    {
-        printf("%d ",arr[j]);
-    }
+    printf("Even count: %d\n",even_count);
+    printf("Odd count: %d",odd_count);
+
+
+
+
     return 0;
 }
