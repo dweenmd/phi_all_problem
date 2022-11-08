@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int n,s;
-    scanf("%d",&n);
+   long long int n,s;
+    scanf("%lld",&n);
     s=n*(n-1)/2;
-    printf("%d",s);
+    printf("%lld",s);
 
     return 0;
 }
