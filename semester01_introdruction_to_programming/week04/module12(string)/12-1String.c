@@ -6,6 +6,6 @@ int main()
     scanf("%s",name);
 
     printf("My name is %s",name);
-
+    
  return 0;   
 }
