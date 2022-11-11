@@ -2,7 +2,7 @@
 int main()
 {
     char sen[10000 ];
-    //scanf("%s",sen);
+
     fgets(sen,sizeof(sen),stdin);
 
     printf("%s",sen);
