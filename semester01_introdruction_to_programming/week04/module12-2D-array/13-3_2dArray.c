@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 int main()
 {
     int row =4, col=3;
