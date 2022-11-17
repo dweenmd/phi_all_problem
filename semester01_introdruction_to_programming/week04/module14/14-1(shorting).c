@@ -13,8 +13,10 @@ int main()
     }
     printf("\n");
 
-    int min=arr[0];
+    for (int j=0; j<size; j++)
+    {int min=arr[0];
     int min_index=0;
+
     for (int i=0; i<size ; i++)
     {
             if(arr[i]<min)
@@ -24,13 +26,19 @@ int main()
 
             }
     }
-      sorted_arr[0]=min;
+      sorted_arr[j]= min;
       arr[min_index]=9999;
-    for (int i=0; i<size ; i++)
+    /*for (int i=0; i<size ; i++)
     {
         printf("%d ",arr[i]);
     }
-    printf("\n");
+    printf("\n");*/
+}
 
+for (int i=0; i<size ; i++)
+    {
+        printf("%d ",sorted_arr[i]);
+    }
+    printf("\n");
   return 0;
 }
