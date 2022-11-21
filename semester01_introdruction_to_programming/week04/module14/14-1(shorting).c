@@ -14,7 +14,8 @@ int main()
     printf("\n");
 
     for (int j=0; j<size; j++)
-    {int min=arr[0];
+{
+    int min=arr[0];
     int min_index=0;
 
     for (int i=0; i<size ; i++)
