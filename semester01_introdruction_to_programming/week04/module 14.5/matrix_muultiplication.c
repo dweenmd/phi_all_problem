@@ -48,7 +48,7 @@ int main() //Dween_Mohammad
         //multiplying matrix
     for(i=0;i<r1; i++){                          //1st matrix er row
          for (j=0;j<c2;j++){                    //2nd matrix er column
-             for (k=0; k<c1; k++){             //1st er prottek row er elements ba column gula
+             for (k=0; k<c1; k++){             //1st matrix er prottek row er elements ba column gula
 
             sum=sum + first [i] [k] * second[k][j];
            
