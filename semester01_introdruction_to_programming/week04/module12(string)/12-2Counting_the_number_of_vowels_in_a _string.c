@@ -5,7 +5,7 @@ int main()
 
     fgets(sen, sizeof(sen), stdin);
 
-    /*printf("%s",seno);*/
+    /*printf("%s",sen);*/
 
     int i=0,counter=0;
     while (sen[i]!='\0')
