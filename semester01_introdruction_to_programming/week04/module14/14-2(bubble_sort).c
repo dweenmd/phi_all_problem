@@ -16,7 +16,7 @@ int main()
 
     for (int i=0; i<size-1; i++)
     {
-        //compare korbo arr[i] and arrp[i+1] er moddhe
+        //compare korbo arr[i] and arr[i+1] er moddhe
 
         if (arr[i]>arr[i+1])
         {

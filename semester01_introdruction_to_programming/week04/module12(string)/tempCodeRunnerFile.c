@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
 
-    char name[100]={'a','b','c','\0'};
+    char name[100]={'a','78','c','\0'};
     char name1[100]="Rafiboss";
     char name2[]=" Google";
     char getName[10];
