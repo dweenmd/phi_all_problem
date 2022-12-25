@@ -1,32 +1,41 @@
 #include<stdio.h>
-int main()
+int main ()
 {
-    int n,count1=0,count2=0;
-    scanf("%d",&n);
-    char str[n];
-    scanf("%s",&str);
-    for(int i=0;i<n;i++)
+    int t,i,ecount=1,ncount=1;
+    char s [10000];
+    scanf("%d",&t);
+    for(i=0; i<t; i++)
     {
-        if(str[i]== '+' && str[i+1]=='+')
+        scanf("%c",&s[i]);
+
+    }
+    int max=0;
+    for (i=0; i<t-1 ; i++)
+    {
+        if(s[i]=='+' && s[i+1]=='+')
         {
-            count1++;
+            ecount++;
+            if(max<ecount)
+                max=ecount;
         }
-        else if(str[i]=='-' && str[i+1]=='-'){
-            count2++;
+
+        else if (s[i]=='-'&& s[i+1]=='-')
+        {
+            ncount++;
+            if(max<ncount)
+                max=ncount;
         }
-    }
-    if(count1>count2)
-    {
-        printf("%d\n",count1+1);
-    }
-     if(count2>count1)
-    {
-        printf("%d\n",count2+1);
-    }
-    else if(count1==count2){
-        printf("0");
+        else
+        {
+            ecount=1;
+            ncount=1;
+        }
     }
 
+
+        printf("%d",max);
+
+
+
     return 0;
-    
 }

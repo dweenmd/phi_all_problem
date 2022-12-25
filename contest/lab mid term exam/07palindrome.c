@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
-int main(){
+int main()
+{
     int n;
     char s[21],sr[21];
     scanf("%d",&n);
@@ -8,30 +9,33 @@ int main(){
     {
         scanf("\n%s",s);
         int strsize = strlen(s);
-        //printf("%d",strsize);
-        // reverse 'str' and store in 'sr'
+        //strcpy(sr,s);
+        //strrev(sr);
 
+          // reverse 'str' and store in 'sr'
+
+   int k=0;
         for (int i=strsize-1; i>=0; i--)
         {
-        sr[strsize-1-i] = s[i];
+        sr[k++] = s[i];
         }
+        sr[k]='\0';
 
-    // comparing string
 
-    if ((strcmp(s, sr) == 0 )&& strsize<=7) {
-        printf("%s\n", s);
+        // comparing string
+
+        if ((strcmp(s, sr) == 0 )&& strsize<=7)
+        {
+            printf("Case #3: %s\n", s);
+        }
+        else if ((strcmp(s, sr) == 0 )&& strsize>7)
+        {
+            printf("Case #2: %c%d%c\n", s[0],strsize-2,s[0]);
+        }
+        else if (strcmp(s, sr) != 0)
+        {
+            printf("Case #1: Not Palindrome\n");
+        }
     }
-    else if ((strcmp(s, sr) == 0 )&& strsize>7) {
-        printf("%c%d%c\n", s[0],strsize-3,s[0]);
-    }
-    else if (strcmp(s, sr) != 0){
-        printf(" Not Palindrome\n");
-
-
-
-    }
-
-    }
-
-return 0;
+    return 0;
 }
