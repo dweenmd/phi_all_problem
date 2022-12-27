@@ -2,28 +2,28 @@
 int main ()
 {
     int t,i,ecount=1,ncount=1;
-    char s [10000];
+    char s[10000];
     scanf("%d",&t);
-    for(i=0; i<t; i++)
-    {
-        scanf("%c",&s[i]);
-
-    }
-    int max=0;
-    for (i=0; i<t-1 ; i++)
+    scanf("%s",s);
+    int max=1;
+    for (i=0; i<t-1; i++)
     {
         if(s[i]=='+' && s[i+1]=='+')
         {
             ecount++;
-            if(max<ecount)
-                max=ecount;
+            if(max<ecount){
+                 max=ecount;
+            }
+
         }
 
         else if (s[i]=='-'&& s[i+1]=='-')
         {
             ncount++;
-            if(max<ncount)
+            if(max<ncount){
                 max=ncount;
+            }
+
         }
         else
         {
