@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
 int main()
 {
     char str[100], chTemp;
@@ -8,15 +8,15 @@ int main()
     printf("Enter any string: ");
     gets(str);
     len = strlen(str);
-    for(i=0; i<len; i++)
+    for (i = 0; i < len; i++)
     {
-        for(j=0; j<(len-1); j++)
+        for (j = 0; j < (len - 1); j++)
         {
-            if(str[j]>str[j+1])
+            if (str[j] > str[j + 1])
             {
                 chTemp = str[j];
-                str[j] = str[j+1];
-                str[j+1] = chTemp;
+                str[j] = str[j + 1];
+                str[j + 1] = chTemp;
             }
         }
     }
