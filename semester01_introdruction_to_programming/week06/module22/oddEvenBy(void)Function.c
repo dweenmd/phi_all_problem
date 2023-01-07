@@ -1,17 +1,8 @@
 #include<stdio.h>
-void find_parity(int x)
-{
-    if (x%2==0)
-        printf("Even \n");
-    else
-        printf("Odd\n");
-}
-int main()
-{
-    int n;
-    scanf("%d",&n);
-
-    find_parity(n);
-    return 0;
-
+main(){
+char str[]="Ibqqz!Cjsuiebz!Ojmpz{",*p;
+p=str;
+while(*p!='\0')
+    --*p++;
+printf("%s\n\n",str);
 }

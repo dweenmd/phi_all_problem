@@ -23,6 +23,8 @@ int main()
 {
     int n;
     scanf("%d",&n);
+
     isPrime(n);
+
     return 0;
 }
