@@ -2,6 +2,7 @@
 int main(){
     int n,k;
     scanf("%d",&n);
+    scanf("%d",&k);
     int arr[n+1];
     int j=0;
     for(int i=1; i<=n; i++){
@@ -22,7 +23,7 @@ int main(){
         printf("%d ",arr[i]);
     }
 
-
+    printf("\nThe %dth element in this sequence is %d.",k,arr[k-1]);
 
 return 0;
 }
