@@ -1,30 +1,44 @@
-#include<stdio.h>
-int is_vowel(char x)
+// practice problem 05(22-5)
+#include <stdio.h>
+int gcd(int n, int m)
 {
-    // if (x == 'A'|| x == 'E'|| x == 'I'|| x== 'O'|| x == 'U')
-    // {
-    //     return 1;
-    // }
-    // else 
-    if ( x == 'a'|| x == 'e'|| x == 'i'||x == 'o'||x == 'u')
+    int l, s, ans;
+    if (m > n)
     {
-        return 1;
+        l = m;
+        s = n;
     }
     else
-        return 0;
+    {
+        l = n;
+        s = m;
+    }
+    for (int i = 1; i < s; i++)
+    {
+        if (l % i == 0 && s % i == 0)
+        {
+            ans = i;
+        }
+    }
+    return ans;
+}
+int lcm(int m, int n)
+{
+    int i;
+    for (i = m ;; i++)                       //  or lcm is
+    {                                        // return (m*n)/gcd
+        if (m % i == 0 && n % i == 0)
+            return i;
+    }
 }
 int main()
 {
-    char ch;
-    ch = getchar();
-    getchar();
-    if (is_vowel(ch ==1))
-    {
-        printf("The character is a vowel.\n");
-    }
-   else
-        printf("The character is a consonant.\n");
+    int a, b;
+    scanf("%d %d", &a, &b);
+    int ans = gcd(a, b);
+    printf("Gcd is %d\n", ans);
+    int ans 2 = lcm(a, m);
+    printf("Lcm is %d\n", ans 2);
 
     return 0;
 }
-
