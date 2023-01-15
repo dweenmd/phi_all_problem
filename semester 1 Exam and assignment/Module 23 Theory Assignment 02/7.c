@@ -2,7 +2,7 @@
 float medium(int arr[], int n)
 {
     int i,j,size;
-    float med;
+    float med;   // important
     size= n;
     printf("Size: %d\n",size);
 
@@ -26,12 +26,12 @@ float medium(int arr[], int n)
     printf("\n");
 
     if(n%2==0){
-        med= (float)(arr[n/2]+arr[(n-1)/2])/2;
+        med= (float)(arr[n/2]+arr[(n-1)/2])/2; //important
         return med;
     }
     else if (n%2!=0){
             med= (n+1)/2;
-        return arr[(int)med-1];
+        return arr[(int)med-1];   //important
     }
 
 }
