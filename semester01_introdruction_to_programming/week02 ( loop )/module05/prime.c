@@ -15,6 +15,11 @@ int main(){
         if(num%i==0)
         {
             flag=1;
+            b m nk
+
+
+
+            jfhuryutyhghbdjhjer
             break;
         }
     }
