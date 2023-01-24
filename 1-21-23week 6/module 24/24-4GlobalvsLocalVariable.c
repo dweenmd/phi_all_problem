@@ -1,18 +1,18 @@
 #include<stdio.h>
 // intruduce global variable
 int gv=9;
-void add_two_number(
+void add_two_number()
     {
          int a,b;
          printf("enter two number\n");
          scanf("%d %d",&a,&b);
          int sum = a+b;
-         printf("%d", sum);
+         printf("%d\n", sum);
          printf("ptinting in add function %d \n", gv);
          gv=gv+2;
          
     }
-) 
+ 
 int main()
 {
     int mv=7;
