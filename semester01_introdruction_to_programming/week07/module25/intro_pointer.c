@@ -6,7 +6,7 @@ int main()
     p = &a;
     //print address location
     printf("%p \n", p);
-    // now we print the address value of p
+    // now we print the value of p
     printf("%d \n",*p);
     return 0;
 
