@@ -14,7 +14,16 @@ int main()
     {
         if (num % i == 0)
         {
+<<<<<<< HEAD
+            flag=1;
+            b m nk
+
+
+
+            jfhuryutyhghbdjhjer
+=======
             flag = 1;
+>>>>>>> 8f9b1fad3edde2f1b902f08f27040459090a9078
             break;
         }
     }
