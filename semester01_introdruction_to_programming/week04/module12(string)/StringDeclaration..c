@@ -7,20 +7,20 @@ int main(){
     char name2[]=" Google";
     char getName[10];
 
- //   for(int i=0;name[i]!='\0';i++){
-   //     printf("%c ",name[i]);
-    //}
+   for(int i=0;name[i]!='\0';i++){
+        printf("%c ",name[i]);
+    }
 
     //inputs:
-    //scanf("%s",&getName);
-    //gets(getName); // Buffer overflow bug
-    //fgets(getName,10,stdin); // Standard read string input
+    scanf("%s",&getName);
+    gets(getName); // Buffer overflow bug
+    fgets(getName,10,stdin); // Standard read string input
 
-   /*outputs:
+   //outputs:
     puts(getName);
     fputs(getName,stdout);
     printf("\n%s",getName);
-    */
+    
     printf("%s",(name));
     printf("\n%s",name);
 }
