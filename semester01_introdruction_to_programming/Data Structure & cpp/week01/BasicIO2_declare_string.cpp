@@ -4,7 +4,8 @@ int main()
 {
     //string declare
     string a;
-    cin >> a;
+    //full string input with space
+    getline(cin , a);
     cout << a<<"\n";
 
     string s= "My name is Dween Mohammad";
