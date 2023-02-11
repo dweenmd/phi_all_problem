@@ -1,4 +1,4 @@
-//patter with function
+//pattern with function
 #include<stdio.h>
 void print_hash(int n)
 {
@@ -11,7 +11,7 @@ void print_hash(int n)
 }
 int main()
 {
-    
+
     int i,n;
     scanf("%d",&n);
     for (i=0;i<=n;i++){
