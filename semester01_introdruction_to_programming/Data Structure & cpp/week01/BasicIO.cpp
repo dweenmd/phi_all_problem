@@ -3,10 +3,16 @@ using namespace std;
 int main()
 {
     // variable declare
-    int a;
+    int a,b;
     // input
-    cin >> a;
+    cin >> a >>b ;   //>> excertion operator
     //output
-    cout << a;
+    cout <<a << " " << b<<"\n"; //<<is called incurtion operator
+
+    char ch;
+    float f;
+    double d;
+    cin>> ch>>f>> d;
+    cout << ch <<" "<<f<< " "<<d <<"\n";
     return 0;
 } // namespace std;
