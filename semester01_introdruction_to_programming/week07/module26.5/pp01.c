@@ -7,6 +7,7 @@ int main()
     float *n,*m;
     n=&a;
     m=&b;
+
     avg=(*n+*m)/2;
     printf("%.2f",avg);
 
