@@ -10,9 +10,6 @@
 # Precompiled Headers
 *.gch
 *.pch
-*.rafi
-*.doc
-*.pdf
 *.txt
 
 # Compiled Dynamic libraries
