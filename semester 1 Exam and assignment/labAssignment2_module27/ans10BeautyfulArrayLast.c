@@ -2,20 +2,21 @@
 #include <math.h>
 int isNiceArray(int n, int *arr)
 {
+    int *x;
     int r=ceil(n/2);
     int count = 0;
     for (int i = 0; i < n; i++)
     {
-        int x = arr[i];
+         x = &arr[i];
 
-        while (x > 0)
+        while (*x > 0)
         {
-            if (x % 10 == 7)
+            if (*x % 10 == 7)
             {
                 count++;
                 break;
             }
-            x /= 10;
+            *x /= 10;
         }
     }
 
