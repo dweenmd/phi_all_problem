@@ -1,14 +1,27 @@
 #include <stdio.h>
 #include <string.h>
-// void BK(char str[],int n);
+void BrokenKyebord(char temp[], int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 2 == 0)
+        {
+            printf("%c%c", temp[i], temp[i]);
+        }
+        else
+            printf("%c", temp[i]);
+    }
+}
 void main()
 {
     char str[100];
-    scanf("%s",str);
+    scanf("%s", str);
     int n = strlen(str);
-    for (int i=0;i<n;i++)
+    char temp[n + 1];
+    for (int i = 0; i <= n; i++)
     {
-        str[i]=str[i]+1;
-        printf("%c",str[i]);
+        temp[1 + i] = str[i];
     }
+
+    BrokenKyebord(temp, n);
 }
