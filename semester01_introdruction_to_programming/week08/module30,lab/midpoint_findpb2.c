@@ -4,7 +4,7 @@ struct point
     float x;
     float y;
 };
-struct point mid(struct point m, struct point n)
+struct point mid(struct point m, struct point n)//this is a funcrion of mid value of a coordinate
 {
     struct point ans ;
     ans.x=(m.x+n.x)/2;
