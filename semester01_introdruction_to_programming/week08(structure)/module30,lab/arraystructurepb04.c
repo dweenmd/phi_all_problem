@@ -23,8 +23,8 @@ int main()
     {
         printf("Informtion of student %d\n", i+1);
         printf("Roll--> %d\n", class[i].roll);
-        scanf("Name--> %s\n", class[i].name);
-        scanf("Marks--> %.2lf", class[i].marks);
+        printf("Name--> %s\n", class[i].name);
+        printf("Marks--> %.2lf", class[i].marks);
     }
     return 0;
 }
