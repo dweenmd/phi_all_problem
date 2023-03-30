@@ -1,10 +1,14 @@
 #include <stdio.h>
-
 int main()
 {
-    int a = 5;
-    int b = 10;
-    int sum = a + b;
-    printf("The sum of a and b is: %d", sum);
+    int sum = 0; // variable initialization
+    int k = 1;
+    for (int i = 1; i <= 10; i++)
+        ; // logical error, as we put the semicolon after loop
+    {
+        sum = sum + k;
+        k++;
+    }
+    printf("The  value of sum is %d", sum);
     return 0;
 }
