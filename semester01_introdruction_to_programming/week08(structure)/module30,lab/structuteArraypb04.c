@@ -6,6 +6,12 @@ struct student
     char name[50];
     double marks;
 };
+void print_student (int n,struct student s ){
+    printf("\nInformtion of student %d\n", n);
+        printf("Roll--> %d\n", s.roll);
+        printf("Name--> %s\n", s.name);
+        printf("Marks--> %.2lf", s.marks);
+}
 
 int main()
 {
@@ -19,12 +25,9 @@ int main()
         scanf("%s", class[i].name);
         scanf("%lf", &class[i].marks);
     }
-    for (i = 0; i < 5; i++)
+    for (i = 1; i <= 5; i++)
     {
-        printf("\nInformtion of student %d\n", i+1);
-        printf("Roll--> %d\n", class[i].roll);
-        printf("Name--> %s\n", class[i].name);
-        printf("Marks--> %.2lf", class[i].marks);
+        print_student(i,class[i]);
     }
     return 0;
 }
