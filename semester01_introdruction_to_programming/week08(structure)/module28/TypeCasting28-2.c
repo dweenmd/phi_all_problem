@@ -6,7 +6,8 @@ int main()
     double b;
     char c='a';
 
-    b=(double)25/4; //This is type casting , if we don't wrote (double) then it will not print the fraction value .. that's why we done type casting.
+    b=(double)25/4; //This is type casting , if we don't wrote (double) then it will not print the 
+    // fraction value .. that's why we done type casting.
 
     printf("%d %lf %c",a,b,c);
     return 0;
@@ -21,7 +22,8 @@ int main()
 
     pi =&a;
     /* pd= &b; */
-//double pointer er vitor integer pointer rakhle warning dey so --- jodi (double *) lekhi tobe kono somossa hoy na ,, that's call pointer type casting
+//double pointer er vitor integer pointer rakhle warning dey so --- jodi (double *) lekhi 
+//tobe kono somossa hoy na ,, that's call pointer type casting
     pd =(double *)pi;
 
     printf("%d %lf\n",a,b);
