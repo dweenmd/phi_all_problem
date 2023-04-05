@@ -1,3 +1,13 @@
+/*
+You are given a string  S of small letters.Now sort the string in ascending order using frequency array.Write the steps to solve this problem with  proper diagram.Lastly write a C program for it and use function in this program. 	   (10)
+
+Note - The given input may contain duplicate characters
+
+Sample input    Sample output
+  adsarbrro	    aabdorrrs
+
+
+*/
 #include <stdio.h>
 #include <string.h>
 void assendingorder(int arr[])
